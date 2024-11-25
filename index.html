@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8"/> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <!--Normalize Css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <!--Css-->
+    <link rel="stylesheet" href="./css/global.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/pokedex.css" type="text/css" media="all" />
+    
+    <title>Pokédex</title>
+    
+  </head>
+  <body>
+    <section class="content">
+      <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyiHtSZfD_pLtGNGhk1PlLUiP6N5yCz1RYsg&s" alt="Pokédex Logo" />
+      <ol id="pokemonsList" class="pokemons">
+      </ol>
+      <div class="pagination">
+        <button id="loadMore" type="button"><img class="pokeball" src="./assets/pokeball.png" alt="" /></button>
+      </div>
+    </section>
+    <script src="./js/pokemon-model.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/poke-api.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

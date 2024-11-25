@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", Sans-Serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url('https://i.pinimg.com/736x/fd/88/ff/fd88ff1025677d83f1a481688e8e3c9a.jpg') repeat;
+  background-size: cover;
+  color: #e0e0e0;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+.content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+.logo {
+  height: 80px;
+  margin-bottom: 2rem;
+}
+.pokeball {
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .content {
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #1e1e1e;
+  }
+}
